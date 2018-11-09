@@ -4,21 +4,21 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 //commom data
-import global_ from '../static/data/common.vue'
+import global_ from '../src/assets/common.vue'
 Vue.prototype.GLOBAL = global_
 //meta
 import MetaInfo from 'vue-meta-info'
 Vue.use(MetaInfo)
 // vuex
 import store from '../store/store'
-Vue.use(MetaInfo)
 
-Vue.config.productionTip = false
+Vue.config.productionTip = true;
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>',
   mounted () {

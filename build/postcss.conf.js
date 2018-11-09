@@ -18,10 +18,6 @@ exports.postfactory = function (opts) {
 
     require('postcss-each')(),
 
-    //类似于sass语法的css变量定义
-
-    require('precss')(),
-
     //sass扩展语法
 
     require('postcss-sass-extend')(),
@@ -29,10 +25,6 @@ exports.postfactory = function (opts) {
     //css媒体查询简写   https://github.com/postcss/postcss-media-minmax/blob/master/README-zh.md
 
     require('postcss-media-minmax')(),
-
-    //css层级写法  https://github.com/postcss/postcss-nested
-
-    require('postcss-nested')(),
 
     //css选择器简写
 

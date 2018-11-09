@@ -12,8 +12,7 @@ Vue.use(Vuex)
 
 const state = {
 
-  baseUrl: '/src/assets/',
-  imgUrl: '/static/img/'
+  data: 'dataTest'
 
 }
 
