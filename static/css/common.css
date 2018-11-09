@@ -1,0 +1,22 @@
+/*重置样式*/
+html{
+    margin: 0;padding: 0;box-sizing: border-box;
+    font-family:'微软雅黑';
+    font-style:normal;   
+    }
+
+body{overflow-x:hidden;background: #fff;margin:0;padding:0}
+h3{margin: 0;padding:0}
+ol,ul{list-style: none;padding-left:0px;}
+li{text-align: center;}
+ul>li{float: left;position: relative;}
+
+img{vertical-align: bottom;}
+
+
+.fl{float: left} .fr{float: right}
+.clearfix{clear:both}
+.container{width: 1200px;margin:0 auto;position: relative;}
+.container:after,.clear:after{content:"";display:block;height:0;clear:both;}
+
+a{text-decoration:none;}
