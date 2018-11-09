@@ -1,14 +1,15 @@
 <template>
     <header>
-        <ul class="container">
-            
-            <li><a href="/">玩家注册</a></li>
-            <li><a href="/notices">充值入口</a></li>
-            <li><a href="/contact">客服中心</a></li>
-            <li><a href="/payment/Alipay">新闻广告</a></li>
-            <li class='last'><a href="/contact">官网首页</a></li>
-            <li class="logo"><a href="/"><img :src="imgUrl+'logo.png'" alt="牌缘城市掼蛋logo"></a></li>
-        </ul>
+        <nav class="container">
+            <ul>
+                <li><a href="/">官网首页</a></li>
+                <li><a href="/news">新闻广告</a></li>
+                <li><a href="/contact">客服中心</a></li>
+                <li><a href="/payment">充值入口</a></li>
+                <li><a href="/register">玩家注册</a></li>
+            </ul>
+            <a href="/" class="logo"><img :src="imgUrl+'logo.png'" alt="牌缘城市掼蛋logo"></a>
+        </nav>
     </header>
 </template>
 
@@ -81,19 +82,21 @@
 <style lang="scss">
 
 header{
-    background:rgba(255, 255, 255, 0.4);
+    background:rgba(255, 255, 255, 0.3);
+    box-shadow: 0 3px 5px 0px rgba(49, 89, 131, 0.2);
     ul{
-        width: 1200px;height:85px;
-        li{float: right;padding: 25px 0;text-align:center;}
-        .last a{border-left-width:0}
+      float: right;
+        li{float: left;text-align:center;padding: 24px 0}
         a{
-           height: 35px;font-size: 24px;color:#3a5673;display: block;line-height:35px;border-left :2px solid #3a5673;padding: 0 28px;
+           display: block;
+           height: 38px;border-left :2px solid #3a5673;padding: 0 25px;
+           font-size: 24px;color:#3a5673;line-height:38px;
         }
-        .logo{
-            float: left;margin-left: 20px;
-            a{border:none;}
-            img{margin-top:-10px;}
-        }
+        li:first-child a{border-left-color:transparent}
+    }
+    .logo{
+        float: left;margin-left: 20px;
+        img{margin-top:12px;}
     }
 }
 </style>
